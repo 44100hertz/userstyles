@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name           Marxists readable text
+@namespace      44100hz
+@version        0.0.0
+@description    Makes Marxists.org and its mirrors have readable column text and italic quotes
+@author         44100hz
+@license        Public domain CC0
+
+@homepageURL    https://github.com/44100hertz/userstyles
+@updateURL      https://github.com/44100hertz/userstyles/raw/master/marxists.user.css
+
+@preprocessor  default
+@var range     font-size 'font-size' [16, 10, 24, 1, 'pt']
+@var range     column-width 'column-width' [600, 250, 1200, 50, 'pt']
+==/UserStyle== */
+
+@-moz-document
+    domain("marxists.org"),
+    domain("marxists.info"),
+    domain("marxists.architexturez.net")
+{
+    body {
+        max-width: var(--column-width);
+        margin: auto;
+        font-family: "georgia", serif;
+    }
+
+    p {
+        font-size: var(--font-size) !important;
+        line-height: 150% !important;
+        text-align: justify !important;
+        text-indent: 2em !important;
+    }
+
+    .quote {
+        font-style: italic;
+    }
+}
