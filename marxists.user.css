@@ -17,7 +17,8 @@
 @-moz-document
     domain("marxists.org"),
     domain("marxists.info"),
-    domain("marxists.architexturez.net")
+    domain("marxists.architexturez.net"),
+    regexp("https://web.archive.org/web/[0-9]+/http://www.marxists.org/.*")
 {
     body {
         max-width: var(--column-width);
