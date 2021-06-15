@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name           unicorn jelly comic reader
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Sharp pixels + big comic = win
+@author         Cyan Pagenkopf
+
+@homepageURL    https://github.com/44100hertz/userstyles
+@updateURL      https://github.com/44100hertz/userstyles/raw/master/unicornjelly.user.css
+==/UserStyle== */
+
+@-moz-document domain("unicornjelly.com") {
+    p > img {
+        image-rendering: crisp-edges;
+        width: 1280px;
+        height: 408px;
+    }
+}
