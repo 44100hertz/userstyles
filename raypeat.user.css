@@ -1,0 +1,11 @@
+/* ==UserStyle==
+@name           raypeat.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Actually load style sheet
+@author         Sam Pagenkopf
+==/UserStyle== */
+
+@-moz-document url-prefix("https://raypeat.com/") {
+    @import url(https://raypeat.com/css/raypeat.css);
+}
